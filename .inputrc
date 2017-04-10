@@ -1,0 +1,22 @@
+set completion-ignore-case on
+set completion-query-items 2000
+set expand-tilde on
+set print-completions-horizontally on
+set show-all-if-ambiguous on
+set show-all-if-unmodified on
+set visible-stats on
+
+"\M-\eOA":      history-search-backward
+"\M-\eOB":      history-search-forward
+
+"\e[7~":    beginning-of-line
+"\e[8~":    end-of-line
+"\eOc":     forward-word
+"\eOd":     backward-word
+
+# prepare to type a quoted word -- insert open and close double quotes
+# and move to just after the open quote
+"\C-x\"": "\"\"\C-b"
+
+# Quote the current or previous word
+"\C-xq": "\eb\"\ef\""
