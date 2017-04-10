@@ -28,8 +28,8 @@
 "set wildmenu
 "vmap <C-down> :m'>+<cr>`<my`>mzgv`yo`z
 "vmap <C-up> :m'<-2<cr>`>my`<mzgv`yo`z
-" color desert
-color elflord
+color desert
+" color elflord
 syntax enable
 filetype plugin indent on
 inoremap <C-c> <END><Tab>/*  */<Left><Left><Left><Left><Left><Left>
@@ -39,11 +39,15 @@ nnoremap <C-Up> :bp<CR>
 nnoremap <C-c> A<Tab>/*  */<Left><Left><Left><Left><Left><Left>
 nnoremap <ESC>[5;5~ <C-PageUp>
 nnoremap <ESC>[6;5~ <C-PageDown>
-nnoremap <M-O> O<Esc>
+" nnoremap <ESC>O O<Esc>
+nnoremap <ESC>h :h <C-r><C-w><CR>
+nnoremap <ESC>n :nohlsearch<CR>
+nnoremap <ESC>o o<Esc>
+nnoremap <M-O>O O<Esc>
 nnoremap <M-h> :h <C-r><C-w><CR>
 nnoremap <M-n> :nohlsearch<CR>
 nnoremap <M-o> o<Esc>
-noremap <F4> <C-o>:s<CR>
+noremap <F4> <C-o>:ls<CR>
 noremap <F5> <C-o>:make<CR>
 noremap <F6> <C-o>:cc<CR>
 noremap <F7> <C-o>:cp<CR>
@@ -56,8 +60,7 @@ set backup
 set cmdheight=1
 set completeopt=menu
 set cursorline
-highlight CursorLine ctermbg=236 cterm=NONE
-" set encoding=utf8
+highlight CursorLine ctermbg=235 cterm=NONE
 set expandtab
 set formatoptions=rqn1jc
 set gdefault
@@ -80,10 +83,10 @@ set shiftwidth=4
 set showcmd
 set showfulltag
 set showmatch
-" set termencoding=latin1
-set timeoutlen=300
+" set timeoutlen=300
 set smartcase
 set softtabstop=4
+" set t_Co=256
 " set tags=/home/tschwarz/Developer/fusion/tags,tags
 set textwidth=80
 set ttyfast
@@ -116,6 +119,7 @@ autocmd BufReadPost *
 " cmdheight
 " args
 " `" and `.
+" :split 'filename'
 
 " allows cursor change in tmux mode
 if exists('$TMUX')
