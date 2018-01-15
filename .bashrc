@@ -20,11 +20,11 @@ shopt -s nullglob
 eval `dircolors -b`
 
 # PS1='\[[7m\]\j \u@\h:\w$(__git_ps1 " (%s)")\[[m\]\n> '
-PS1="\e[7m\u@\h:\w(\j)\e[27m\n> "
-PS2="continue> "
+#PS1="\e[7m\u@\h:\w(\j)\e[27m\n> "
+#PS2="continue> "
 
 ulimit -c unlimited
-stty -ixon -ixoff -tostop
+stty -ixon -ixoff # -tostop
 
 function unzipindir()
 {
@@ -39,11 +39,8 @@ function unzipindir()
 #export GIT_PS1_SHOWUPSTREAM="auto"
 export COLUMNS
 export EDITOR=vim
-export GREP_COLOR=101
+# export GREP_COLOR=101
 export HISTCONTROL="ignoreboth:erasedups"
 export HISTFILESIZE=50000
 export HISTSIZE=50000
-export LANG=en_US.iso88591
-export LD_LIBRARY_PATH=~/Unix/lib:$LD_LIBRARY_PATH
-export MANPATH=/home/tschwarz/Unix/share/man:$MANPATH
-export PATH=.:/home/tschwarz/Unix/bin:$PATH
+export LANG=en_US.utf8
