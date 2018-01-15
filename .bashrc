@@ -32,6 +32,7 @@ function unzipindir()
 }
 
 #    wmname LG3D
+complete -o nospace -F _task t # completion for taskwarrior
 
 #export GIT_PS1_SHOWDIRTYSTATE=1
 #export GIT_PS1_SHOWSTASHSTATE=1
@@ -43,4 +44,3 @@ export EDITOR=vim
 export HISTCONTROL="ignoreboth:erasedups"
 export HISTFILESIZE=50000
 export HISTSIZE=50000
-export LANG=en_US.utf8
