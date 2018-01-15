@@ -1,11 +1,20 @@
+
+set bell-style visible
+set blink-matching-paren on
+set colored-completion-prefix on
+set colored-stats on
 set completion-ignore-case on
-set completion-query-items 2000
+set completion-map-case on
+set completion-prefix-display-length 5
+set completion-query-items 1000
+set editing-mode vi
 set expand-tilde on
 set print-completions-horizontally on
 set show-all-if-ambiguous on
 set show-all-if-unmodified on
+set show-mode-in-prompt on
+set skip-completed-text on
 set visible-stats on
-
 "\M-\eOA":      history-search-backward
 "\M-\eOB":      history-search-forward
 
