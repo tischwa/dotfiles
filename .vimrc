@@ -89,6 +89,7 @@ set softtabstop=4
 " set t_Co=256
 " set tags=/home/tschwarz/Developer/fusion/tags,tags
 set textwidth=80
+set title
 set ttyfast
 set undofile
 set wildmenu

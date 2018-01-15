@@ -3,6 +3,7 @@
 # for examples
 
 source ~/.alias
+source /etc/bash_completion.d/task.sh
 
 auto_resume=substring
 command_oriented_history=t
