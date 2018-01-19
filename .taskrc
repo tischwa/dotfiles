@@ -34,7 +34,7 @@ search.case.sensitive=no
 nag=
 #urgency.user.tag.next.coefficient          15.0 # +next tag
 #urgency.due.coefficient                    12.0 # overdue or near due date
-urgency.blocking.coefficient =               5.0 # 8.0 blocking other tasks
+urgency.blocking.coefficient =               6.0 # 8.0 blocking other tasks
 #urgency.uda.priority.H.coefficient          6.0 # high Priority
 #urgency.uda.priority.M.coefficient          3.9 # medium Priority
 #urgency.uda.priority.L.coefficient          1.8 # low Priority
@@ -42,7 +42,7 @@ urgency.blocking.coefficient =               5.0 # 8.0 blocking other tasks
 #urgency.scheduled.coefficient               4.0 # scheduled tasks
 #urgency.age.coefficient                     2.0 # coefficient for age
 urgency.annotations.coefficient =            0.0 # 1.0 has annotations
-#urgency.tags.coefficient                    1.0 # has tags
+urgency.tags.coefficient =                   0.0 # has tags
 #urgency.project.coefficient                 1.0 # assigned to any project
 #urgency.blocked.coefficient                 -5.0 # blocked by other tasks
 #urgency.waiting.coefficient                 -3.0 # waiting task
@@ -50,5 +50,6 @@ urgency.annotations.coefficient =            0.0 # 1.0 has annotations
 #urgency.user.tag.<tag>.coefficient          5.0 # specific tag
 #urgency.uda.<name>.coefficient              5.0 # specific UDA
 context.home=-dev -orga -travel -work -truck
-context.work=-family -fun -health -money -prod -career
+context.work=-family -fun -health -money -prod -career -comp
 context=home
+context.-family=-fun -health -money -prod -career
