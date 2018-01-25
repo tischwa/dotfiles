@@ -1,5 +1,20 @@
+alias ...='cd ../..'
+alias ..='cd ..'
+alias aptse="aptitude search"
+alias aptsh="aptitude show"
 alias cal='cal --monday --week --three'
-alias t=task
-alias tt='task +OVERDUE or +TODAY'
+alias df="df -h"
+alias fp="ps aux|grep -i "
+alias g='git'
+alias grep='grep --colour=always'
+alias l='ls -CFN'
+alias ll='ls -lAhN'
+alias lo="locate"
+alias ls="ls -N --color=auto"
+alias man='LANG=C man'
+alias newlogin="kdmctl reserve"
+alias t="task"
 alias td='task +OVERDUE or +DUE'
-alias tw=timew
+alias tt='task +OVERDUE or +TODAY'
+alias tw="timew"
+alias v="vim"
