@@ -1,0 +1,5 @@
+alias cal='cal --monday --week --three'
+alias t=task
+alias tt='task +OVERDUE or +TODAY'
+alias td='task +OVERDUE or +DUE'
+alias tw=timew
