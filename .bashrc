@@ -3,7 +3,9 @@
 # for examples
 
 source ~/.alias
+source ~/local/bin/git-completion.bash
 source /etc/bash_completion.d/task.sh
+#source /etc/bash_completion.d/zzz-fzf
 
 auto_resume=substring
 command_oriented_history=t
@@ -45,3 +47,4 @@ export EDITOR=vim
 export HISTCONTROL="ignoreboth:erasedups"
 export HISTFILESIZE=50000
 export HISTSIZE=50000
+export FZF_COMPLETION_TRIGGER='~~'
