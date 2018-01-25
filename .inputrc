@@ -8,11 +8,14 @@ set completion-prefix-display-length 10
 set completion-query-items 1000
 # set editing-mode vi   breaks fzf reverse search
 set expand-tilde on
+# set menu-complete-display-prefix on
 set print-completions-horizontally on
 set show-all-if-ambiguous on
 set show-all-if-unmodified on
 set show-mode-in-prompt on
 set skip-completed-text on
+# set vi-cmd-mode-string on
+# set vi-ins-mode-string on
 set visible-stats on
 "\M-\eOA":      history-search-backward
 "\M-\eOB":      history-search-forward
@@ -24,7 +27,7 @@ set visible-stats on
 
 # prepare to type a quoted word -- insert open and close double quotes
 # and move to just after the open quote
-"\C-x\"": "\"\"\C-b"
+#"\C-x\"": "\"\"\C-b"
 
 # Quote the current or previous word
-"\C-xq": "\eb\"\ef\""
+#"\C-xq": "\eb\"\ef\""
