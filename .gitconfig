@@ -1,0 +1,13 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+#	name = Tilo Schwarz
+#	email = tilo.schwarz@daimler.com
+[user]
+	name = Tilo Schwarz
+	email = tilo.schwarz.de@gmail.com
+[gui]
+	fontui = -family \"DejaVu Sans\" -size 11 -weight normal -slant roman -underline 0 -overstrike 0
+	fontdiff = -family \"DejaVu Sans Mono\" -size 11 -weight normal -slant roman -underline 0 -overstrike 0
+[credential]
+	helper = cache --timeout=2592000
