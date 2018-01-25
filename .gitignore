@@ -2,10 +2,11 @@
 .cache
 .config
 .gnome
-.mozilla
-tmp
 .local
+.mozilla
+.pki
 .task
+.unison
 .vim
 Data
 Developer
@@ -14,3 +15,4 @@ Download
 Unix
 local
 root
+tmp
