@@ -1,0 +1,23 @@
+URxvt*iso14755: false
+URxvt*iso14755_52: false
+URxvt*background: black
+URxvt*charClass: 33:48,37:48,45-47:48,38:48
+!URxvt*font: 7x13
+URxvt*font: fixed
+URxvt*foreground: white
+!rxvt, plain, next or xterm.
+URxvt*scrollBar: rxvt
+URxvt*visualBell: true
+URxvt*visualBellDelay: 100
+!URxvt*meta8: false
+URxvt*scrollTtyOutput: false
+URxvt*scrollWithBuffer:  false
+URxvt*scrollTtyKeypress: true
+!URxvt*font:  -xos4-terminus-medium-*-*-*-14-*-*-*-*-*-iso8859-15,xft:terminus:pixelsize:12
+!URxvt*boldFont:  -xos4-terminus-bold-*-*-*-14-*-*-*-*-*-iso8859-15,xft:terminus:bold:pixelsize:12
+!URxvt*italicFont:  xft:Bitstream Vera Sans Mono:italic:autohint=true:pixelsize=12
+!URxvt*boldItalicFont:  xft:Bitstream Vera Sans Mono:bold:italic:autohint=true:pixelsize=12
+URxvt*saveLines:  20000
+URxvt*perl-ext-common: searchable-scrollback
+!URxvt.colorBD:  white
+URxvt.colorIT:  green
