@@ -1,7 +1,16 @@
 *~
 .cache
 .config
+.gnome
+.mozilla
+tmp
 .local
 .task
 .vim
+Data
+Developer
+Documents
+Download
+Unix
 local
+root
