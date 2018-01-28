@@ -14,7 +14,7 @@ alias ls="ls -N --color=auto"
 alias man='LANG=C man'
 alias newlogin="kdmctl reserve"
 alias t="task"
-alias td='task +OVERDUE or +DUE'
-alias tt='task +OVERDUE or +TODAY'
+alias td='task +OVERDUE or +DUE or +ACTIVE'
+alias tt='task +OVERDUE or +TODAY or +ACTIVE'
 alias tw="timew"
 alias v="vim"
