@@ -51,4 +51,10 @@ urgency.tags.coefficient =                   0.0 # has tags
 #urgency.uda.<name>.coefficient              5.0 # specific UDA
 context.home=-dev -orga -travel -work -truck
 context.work=-family -fun -health -money -prod -career -comp -home
+uda.reviewed.type=date
+uda.reviewed.label=Reviewed
+report._reviewed.description=Tasksh review report.  Adjust the filter to your needs.
+report._reviewed.columns=uuid
+report._reviewed.sort=reviewed+,modified+
+report._reviewed.filter=( reviewed.none: or reviewed.before:now-13days ) and ( +PENDING or +WAITING )
 context=home
