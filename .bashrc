@@ -43,8 +43,8 @@ export COLUMNS
 export EDITOR=vim
 export FZF_COMPLETION_TRIGGER='~~'
 export GIT_PS1_SHOWDIRTYSTATE=1
-export GIT_PS1_SHOWSTASHSTATE=1
-export GIT_PS1_SHOWUNTRACKEDFILES=1
+export GIT_PS1_SHOWSTASHSTATE=0
+export GIT_PS1_SHOWUNTRACKEDFILES=0
 export GIT_PS1_SHOWUPSTREAM="auto"
 export GREP_COLOR=101
 export HISTCONTROL="ignoreboth:erasedups"
@@ -55,6 +55,7 @@ export HISTSIZE=50000
 
 source ~/.alias
 source ~/local/bin/git-completion.bash
+source ~/local/bin/git-prompt.sh
 source /etc/bash_completion.d/task.sh
 #source /etc/bash_completion.d/zzz-fzf
 
@@ -75,3 +76,10 @@ function unzipindir()
     unzip $@ -d `basename $@ .zip`
 }
 
+# The following are necessary only for Cygwin, and only are needed
+# when the user has tab-completed the executable name and consequently
+# included the '.exe' suffix.
+#
+#if [ Cygwin = "$(uname -o 2>/dev/null)" ]; then
+#__git_complete git.exe __git_main
+#fi
