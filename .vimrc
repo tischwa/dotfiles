@@ -54,18 +54,17 @@
 "nmap <ESC>[6^ <C-PageDown>
 "nmap <ESC>[6^ <C-PageDown>
 "set backupdir=/home/tschwarz/Data/backup/vim
-"set colorcolumn=85
 "set shortmess=O
-"set wildmenu
 "vmap <C-down> :m'>+<cr>`<my`>mzgv`yo`z
 "vmap <C-up> :m'<-2<cr>`>my`<mzgv`yo`z
 au BufEnter *.hs compiler ghc
 au BufEnter *.hs compiler ghc
 autocmd InsertEnter * setlocal nolist
 autocmd InsertLeave * setlocal list
-color desert
+"color desert
 filetype plugin indent on
 highlight CursorLine ctermbg=235 cterm=NONE
+highlight ColorColumn ctermbg=232 cterm=NONE
 inoremap <C-c> <END><Tab>/*  */<Left><Left><Left><Left><Left><Left>
 inoremap jk <ESC>
 let g:haddock_browser = "/usr/bin/opera"
@@ -87,7 +86,7 @@ nnoremap <ESC>h :h <C-r><C-w><CR>
 nnoremap <ESC>n :nohlsearch<CR>
 nnoremap <ESC>o o<Esc>
 nnoremap <M-O>O O<Esc>
-nnoremap <M-h> :h <C-r><C-w><CR>
+nnoremap <M-h> :h <C-r><C-w><CR><C-w><C-w>
 nnoremap <M-n> :nohlsearch<CR>
 nnoremap <M-o> o<Esc>
 set autoindent
@@ -96,6 +95,7 @@ set autowrite
 set backspace=indent,eol,start
 set backup
 set cmdheight=1
+set colorcolumn=80
 set completeopt=menu
 set cursorline
 set expandtab
