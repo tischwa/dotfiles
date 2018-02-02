@@ -33,6 +33,8 @@ weekstart=monday
 search.case.sensitive=no
 nag=
 due=14
+alias.c=context
+tasksh.autoclear=1
 #urgency.user.tag.next.coefficient          15.0 # +next tag
 #urgency.due.coefficient                    12.0 # overdue or near due date
 urgency.blocking.coefficient =               6.0 # 8.0 blocking other tasks
@@ -51,7 +53,7 @@ urgency.tags.coefficient =                   0.0 # has tags
 #urgency.user.tag.<tag>.coefficient          5.0 # specific tag
 #urgency.uda.<name>.coefficient              5.0 # specific UDA
 context.home=-dev -orga -travel -work -truck
-context.work=-family -fun -health -money -prod -career -comp -home
+context.work=-family -fun -health -money -prod -career -comp -home -skills
 uda.reviewed.type=date
 uda.reviewed.label=Reviewed
 report._reviewed.description=Tasksh review report.  Adjust the filter to your needs.
