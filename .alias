@@ -15,7 +15,7 @@ alias man='LANG=C man'
 alias newlogin="kdmctl reserve"
 alias t="task"
 alias ta='task add'
-alias td='task +OVERDUE or +DUE or +ACTIVE'
+alias td='task +DUE or +ACTIVE'
 alias ts='tasksh'
 alias tt='task +OVERDUE or +TODAY or +ACTIVE'
 alias tw="timew"
