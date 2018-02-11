@@ -24,8 +24,6 @@
     shopt -s histappend
     shopt -s no_empty_cmd_completion
     shopt -s nullglob
-
-    setxkbmap -option caps:super
 #else
     #xset s off
     #xset r rate 250 30
@@ -46,6 +44,8 @@ if [ -z ${CYG_SYS_BASHRC+x} ]; then # if not on cygwin
     export GIT_PS1_SHOWUNTRACKEDFILES=1
     export GIT_PS1_SHOWUPSTREAM="auto"
     source ~/local/bin/git-prompt.sh
+
+    setxkbmap -option caps:super
 else # on cygwin
     #PS1="\e[7m\u@\h:\w(\j)\e[27m\n> "
     echo

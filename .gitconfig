@@ -2,8 +2,8 @@
     name = Tilo Schwarz
     email = tilo.schwarz.de@gmail.com
 [gui]
-    fontdiff = -family terminal -size 8 -weight normal -slant roman -underline 0 -overstrike 0
-    fontui = -family helvetica -size 8 -weight bold -slant roman -underline 0 -overstrike 0
+	fontdiff = -family \"DejaVu Sans Mono\" -size 11 -weight normal -slant roman -underline 0 -overstrike 0
+	fontui = -family \"Lucida Console\" -size 11 -weight bold -slant roman -underline 0 -overstrike 0
 
 [alias]
     b = branch

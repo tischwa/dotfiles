@@ -1,22 +1,24 @@
 alias ...='cd ../..'
 alias ..='cd ..'
-alias aptse="aptitude search"
-alias aptsh="aptitude show"
+alias aptse='aptitude search'
+alias aptsh='aptitude show'
 alias cal='cal --monday --week --three'
-alias df="df -h"
-alias fp="ps aux|grep -i "
+alias df='df -h'
+alias fp='ps aux|grep -i '
 alias g='git'
 alias grep='grep --colour=always'
 alias l='ls -CFN'
 alias ll='ls -lAhN'
-alias lo="locate"
-alias ls="ls -N --color=auto"
+alias lo='locate'
+alias ls='ls -N --color=auto'
 alias man='LANG=C man'
-alias newlogin="kdmctl reserve"
-alias t="task"
+alias newlogin='kdmctl reserve'
+alias t='task'
 alias ta='task add'
-alias td='task +DUE or +ACTIVE'
+alias tc='task c'
+alias td='task d'
+alias to='taskopen'
 alias ts='tasksh'
-alias tt='task +OVERDUE or +TODAY or +ACTIVE'
-alias tw="timew"
-alias v="vim"
+alias tt='task t'
+alias tw='timew'
+alias v='vim'
