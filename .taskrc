@@ -10,64 +10,67 @@
 
 # Use the command 'task show' to see all defaults and overrides
 
-# Files
-data.location=~/.task
-
-# Color theme (uncomment one to use)
-#include /home/TISCHWA/share/doc/task/rc/light-16.theme
-#include /home/TISCHWA/share/doc/task/rc/light-256.theme
 #include /home/TISCHWA/share/doc/task/rc/dark-16.theme
 #include /home/TISCHWA/share/doc/task/rc/dark-256.theme
-#include /home/TISCHWA/share/doc/task/rc/dark-red-256.theme
-#include /home/TISCHWA/share/doc/task/rc/dark-green-256.theme
 #include /home/TISCHWA/share/doc/task/rc/dark-blue-256.theme
-#include /home/TISCHWA/share/doc/task/rc/dark-violets-256.theme
-#include /home/TISCHWA/share/doc/task/rc/dark-yellow-green.theme
 #include /home/TISCHWA/share/doc/task/rc/dark-gray-256.theme
 #include /home/TISCHWA/share/doc/task/rc/dark-gray-blue-256.theme
+#include /home/TISCHWA/share/doc/task/rc/dark-green-256.theme
+#include /home/TISCHWA/share/doc/task/rc/dark-red-256.theme
+#include /home/TISCHWA/share/doc/task/rc/dark-violets-256.theme
+#include /home/TISCHWA/share/doc/task/rc/dark-yellow-green.theme
+#include /home/TISCHWA/share/doc/task/rc/light-16.theme
+#include /home/TISCHWA/share/doc/task/rc/light-256.theme
+#include /home/TISCHWA/share/doc/task/rc/no-color.theme
 #include /home/TISCHWA/share/doc/task/rc/solarized-dark-256.theme
 #include /home/TISCHWA/share/doc/task/rc/solarized-light-256.theme
-#include /home/TISCHWA/share/doc/task/rc/no-color.theme
-
-weekstart=monday
-search.case.sensitive=no
-nag=
-due=14
-alias.c=context
 #tasksh.autoclear=1
-#urgency.user.tag.next.coefficient          15.0 # +next tag
-#urgency.due.coefficient                    12.0 # overdue or near due date
-urgency.blocking.coefficient =               6.0 # 8.0 blocking other tasks
-#urgency.uda.priority.H.coefficient          6.0 # high Priority
-#urgency.uda.priority.M.coefficient          3.9 # medium Priority
-#urgency.uda.priority.L.coefficient          1.8 # low Priority
 #urgency.active.coefficient                  4.0 # already started tasks
-#urgency.scheduled.coefficient               4.0 # scheduled tasks
 #urgency.age.coefficient                     2.0 # coefficient for age
-urgency.annotations.coefficient =            0.0 # 1.0 has annotations
-urgency.tags.coefficient =                   0.0 # has tags
+#urgency.due.coefficient                    12.0 # overdue or near due date
 #urgency.project.coefficient                 1.0 # assigned to any project
-#urgency.blocked.coefficient                 -5.0 # blocked by other tasks
-#urgency.waiting.coefficient                 -3.0 # waiting task
+#urgency.scheduled.coefficient               4.0 # scheduled tasks
+#urgency.uda.<name>.coefficient              5.0 # specific UDA
+#urgency.uda.priority.H.coefficient          6.0 # high Priority
+#urgency.uda.priority.L.coefficient          1.8 # low Priority
+#urgency.uda.priority.M.coefficient          3.9 # medium Priority
 #urgency.user.project.<project>.coefficient  5.0 # specific project
 #urgency.user.tag.<tag>.coefficient          5.0 # specific tag
-#urgency.uda.<name>.coefficient              5.0 # specific UDA
+#urgency.user.tag.next.coefficient          15.0 # +next tag
+#urgency.waiting.coefficient                 -3.0 # waiting task
+alias.c=context
+alias.co=completed
 context.h=-dev -orga -travel -work -truck
 context.w=-family -fun -health -money -prod -career -comp -home -skills
-uda.reviewed.type=date
-uda.reviewed.label=Reviewed
-report._reviewed.description=Tasksh review report.  Adjust the filter to your needs.
+data.location=~/.task
+due=14
+nag=
 report._reviewed.columns=uuid
-report._reviewed.sort=reviewed+,modified+
+report._reviewed.description=Tasksh review report.  Adjust the filter to your needs.
 report._reviewed.filter=( reviewed.none: or reviewed.before:now-13days ) and ( +PENDING or +WAITING )
-report.d.description=Tasks due
+report._reviewed.sort=reviewed+,modified+
+report.completed.columns=id,uuid.short,entry,entry.age,due,due.age,end,end.age,depends,priority,project,tags,recur.indicator,description
+report.completed.labels=ID,UUID,Created,Age,Due,DueAge,Completed,CompAge,Deps,P,Project,Tags,R,Description
+report.completed.sort=end+
 report.d.columns=id,start.age,entry.age,depends.count,priority,project,tags,recur.indicator,scheduled.countdown,due.relative,until.remaining,description,urgency
+report.d.description=Tasks due
 report.d.filter=+DUE or +ACTIVE
 report.d.labels=ID,Active,Age,D,P,Project,Tags,R,Sch,Due,Until,Description,Urg
 report.d.sort=urgency-,due+
-report.t.description=Tasks due today or overdue
 report.t.columns=id,start.age,entry.age,depends.count,priority,project,tags,recur.indicator,scheduled.countdown,due.relative,until.remaining,description,urgency
+report.t.description=Tasks due today or overdue
 report.t.filter=+OVERDUE or +TODAY or +TOMORROW or +ACTIVE
 report.t.labels=ID,Active,Age,D,P,Project,Tags,R,Sch,Due,Until,Description,Urg
 report.t.sort=urgency-,due+
+reserved.lines=2
+search.case.sensitive=no
+uda.reviewed.label=Reviewed
+uda.reviewed.type=date
+#urgency.blocking.coefficient =               6.0 # 8.0 blocking other tasks
+urgency.annotations.coefficient =            0.0 # 1.0 has annotations
+urgency.blocked.coefficient=                 0.0 # blocked by other tasks
+urgency.blocking.coefficient =               0.0 # 8.0 blocking other tasks
+urgency.inherit=on
+urgency.tags.coefficient =                   0.0 # has tags
+weekstart=monday
 context=h
