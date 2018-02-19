@@ -27,8 +27,8 @@
 #tasksh.autoclear=1
 #urgency.active.coefficient                  4.0 # already started tasks
 #urgency.age.coefficient                     2.0 # coefficient for age
+#urgency.blocking.coefficient =               6.0 # 8.0 blocking other tasks
 #urgency.due.coefficient                    12.0 # overdue or near due date
-#urgency.project.coefficient                 1.0 # assigned to any project
 #urgency.scheduled.coefficient               4.0 # scheduled tasks
 #urgency.uda.<name>.coefficient              5.0 # specific UDA
 #urgency.uda.priority.H.coefficient          6.0 # high Priority
@@ -40,10 +40,13 @@
 #urgency.waiting.coefficient                 -3.0 # waiting task
 alias.c=context
 alias.co=completed
+alias.n=next
+color.blocking=on blue
 context.h=-dev -orga -travel -work -truck
 context.w=-family -fun -health -money -prod -career -comp -home -skills
+context=h
 data.location=~/.task
-due=14
+due=28
 nag=
 report._reviewed.columns=uuid
 report._reviewed.description=Tasksh review report.  Adjust the filter to your needs.
@@ -52,25 +55,19 @@ report._reviewed.sort=reviewed+,modified+
 report.completed.columns=id,uuid.short,entry,entry.age,due,due.age,end,end.age,depends,priority,project,tags,recur.indicator,description
 report.completed.labels=ID,UUID,Created,Age,Due,DueAge,Completed,CompAge,Deps,P,Project,Tags,R,Description
 report.completed.sort=end+
-report.d.columns=id,start.age,entry.age,depends.count,priority,project,tags,recur.indicator,scheduled.countdown,due.relative,until.remaining,description,urgency
-report.d.description=Tasks due
-report.d.filter=+DUE or +ACTIVE
-report.d.labels=ID,Active,Age,D,P,Project,Tags,R,Sch,Due,Until,Description,Urg
-report.d.sort=urgency-,due+
 report.t.columns=id,start.age,entry.age,depends.count,priority,project,tags,recur.indicator,scheduled.countdown,due.relative,until.remaining,description,urgency
 report.t.description=Tasks due today or overdue
-report.t.filter=+OVERDUE or +TODAY or +TOMORROW or +ACTIVE
+report.t.filter=+PENDING and (+OVERDUE or +TODAY or +TOMORROW or +ACTIVE)
 report.t.labels=ID,Active,Age,D,P,Project,Tags,R,Sch,Due,Until,Description,Urg
 report.t.sort=urgency-,due+
 reserved.lines=2
 search.case.sensitive=no
 uda.reviewed.label=Reviewed
 uda.reviewed.type=date
-#urgency.blocking.coefficient =               6.0 # 8.0 blocking other tasks
-urgency.annotations.coefficient =            0.0 # 1.0 has annotations
-urgency.blocked.coefficient=                 0.0 # blocked by other tasks
-urgency.blocking.coefficient =               0.0 # 8.0 blocking other tasks
-urgency.inherit=on
-urgency.tags.coefficient =                   0.0 # has tags
+urgency.annotations.coefficient = 0.0 # 1.0 has annotations
+urgency.blocked.coefficient = 0.0 # blocked by other tasks
+urgency.blocking.coefficient = 0.0 # 8.0 blocking other tasks
+urgency.inherit = on
+urgency.project.coefficient = 0.0 # assigned to any project
+urgency.tags.coefficient = 0.0 # has tags
 weekstart=monday
-context=h

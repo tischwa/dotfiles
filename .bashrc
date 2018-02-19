@@ -77,6 +77,7 @@ stty -ixon -ixoff -tostop
 
 #    wmname LG3D
 complete -o nospace -F _task t # completion for taskwarrior
+complete -o nospace -F _task ta # completion for taskwarrior
 
 function unzipindir()
 {
