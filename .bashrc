@@ -58,7 +58,7 @@ export GREP_COLOR=101
 export HISTCONTROL="ignoreboth:erasedups"
 export HISTFILESIZE=50000
 export HISTSIZE=50000
-export LESS='--quit-at-eof --quit-if-one-screen --ignore-case --status-column --hilite-unread --window=-3 --jump-target=3 --LONG-PROMPT --RAW-CONTROL-CHARS'
+export LESS='--quit-at-eof --quit-if-one-screen --ignore-case --status-column --hilite-unread --window=-3 --jump-target=3 --LONG-PROMPT --RAW-CONTROL-CHARS --no-init'
 #export LANG=en_US.iso88591
 #export LC_CTYPE=de_DE.ISO8859-1
 
