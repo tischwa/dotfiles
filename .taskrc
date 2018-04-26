@@ -41,6 +41,7 @@
 alias.c=context
 alias.co=completed
 alias.n=next
+alias.np=next limit:page
 color.blocking=on blue
 context.h=-dev -orga -travel -work -truck
 context.w=-family -fun -health -money -prod -career -comp -home -skills
@@ -60,6 +61,7 @@ report.t.filter=+PENDING and (+OVERDUE or +TODAY or +TOMORROW or +ACTIVE)
 report.t.labels=ID,Active,Age,D,P,Project,Tags,R,Sch,Due,Until,Description,Urg
 report.t.sort=urgency-,due+
 report.next.columns=id,start.age,entry.age,depends,priority,project,tags,recur,scheduled.countdown,due.relative,description,urgency,until.remaining
+report.next.filter=status:pending limit:40
 report.next.labels=ID,Active,Age,Deps,P,Project,Tag,Recur,S,Due,Description,Urg,Until
 reserved.lines=2
 search.case.sensitive=no

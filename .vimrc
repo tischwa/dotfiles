@@ -64,7 +64,7 @@ autocmd InsertLeave * setlocal list
 "color desert
 filetype plugin indent on
 highlight CursorLine ctermbg=235 cterm=NONE
-highlight ColorColumn ctermbg=232 cterm=NONE
+highlight ColorColumn ctermbg=233 cterm=NONE
 inoremap <C-c> <END><Tab>/*  */<Left><Left><Left><Left><Left><Left>
 inoremap jk <ESC>
 let g:haddock_browser = "/usr/bin/opera"
