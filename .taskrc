@@ -8,6 +8,7 @@
 #   variable=      -- By specifying no value, this means no default
 #   #variable=foo  -- By commenting out the line, or deleting it, this uses the default
 
+# test
 # Use the command 'task show' to see all defaults and overrides
 
 #include /home/TISCHWA/share/doc/task/rc/dark-16.theme
